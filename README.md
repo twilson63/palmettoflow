@@ -1,5 +1,7 @@
 # Palmetto Flow
 
+## WIP - Work in progress, please star the project on github to keep informed.
+
 Palmetto Flow is a concept about building applications.  Palmetto is a set of principals that enable you to implement in technologies of your choice.  The goal is to create applications, components and services that act like stereos, it is very easy to replace pieces of the application without having to replace/re-write the entire application.  There are a few concepts to understand and they should be straight forward and simple to follow:
 
 * [Application State](state.md)
