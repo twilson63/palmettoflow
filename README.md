@@ -4,13 +4,14 @@
 
 Palmetto Flow is a concept about building applications.  Palmetto is a set of principals that enable you to implement in technologies of your choice.  The goal is to create applications, components and services that act like stereos, it is very easy to replace pieces of the application without having to replace/re-write the entire application.  There are a few concepts to understand and they should be straight forward and simple to follow:
 
-## [FAQ](faq.md)
-
-* [Application State](state.md)
-* [Write Stream](stream.md)
-* [Events](events.md)
-* [Components](components.md)
-* [Services](services.md)
+* Concepts
+  * [Application State](state.md)
+  * [Write Stream](stream.md)
+  * [Events](events.md)
+  * [Components](components.md)
+  * [Services](services.md)
+* [FAQ](faq.md)
+* [Examples](examples.md)
 
 ## Features
 
@@ -39,3 +40,15 @@ The ability to bring up a service by replaying the log is a very powerful concep
 ### Feature Consistency
 
 By separating the concerns of the application features it should continue to keep timeline of adding a new feature consistent regardless if this is feature 3 or feature 303.  The amount of time to add/modify/remove features should not slow down exponentially over time.  Also, it should make it easy to remove features that do not work and are not being used just as easy as adding new features.
+
+## DISCUSSION
+
+[https://gitter.im/twilson63/palmettoflow](https://gitter.im/twilson63/palmettoflow)
+
+## CONTRIBUTION
+
+see [contribution.md](contribution.md)
+
+## LICENSE
+
+see LICENSE
