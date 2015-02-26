@@ -1,4 +1,4 @@
-<img src="palmetto.png" alt="palmetto" height="100px" width="100px" />
+<img src="palmetto.png" alt="palmetto" style="float: right;" height="100px" width="100px" />
 
 # Palmetto Flow
 
