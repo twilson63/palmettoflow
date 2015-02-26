@@ -1,3 +1,5 @@
+<img src="palmetto.png" alt="palmetto" height="100px" width="100px" />
+
 # Palmetto Flow
 
 ## WIP - Work in progress, please star the project on github to keep informed.
@@ -70,4 +72,4 @@ see [contribution.md](contribution.md)
 
 ## License
 
-see LICENSE
+see [LICENSE](LICENSE)
