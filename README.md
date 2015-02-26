@@ -1,3 +1,6 @@
+
+<img src="palmetto2.png" alt="palmetto" align="right" height="100px" width="100px" />
+
 # Palmetto Flow
 
 [![Join the chat at https://gitter.im/twilson63/palmettoflow](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/twilson63/palmettoflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -72,4 +75,4 @@ see [contribution.md](contribution.md)
 
 ## License
 
-see LICENSE
+see [LICENSE](LICENSE)

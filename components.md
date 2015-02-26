@@ -1,3 +1,5 @@
+<img src="palmetto2.png" alt="palmetto" align="right" height="100px" width="100px" />
+
 # Components
 
 A `Component` in palmetto flow is responsible for the rendering the state of a section of your application as some sort of presentation view.  In most applicaitons this would be html.  The component is also responsible for listening to events that may effect the change in state for your component.  The component is also capable of posting events into a write log/stream to either add data to a service or query data from services.
