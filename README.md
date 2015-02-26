@@ -2,6 +2,8 @@
 
 # Palmetto Flow
 
+[![Join the chat at https://gitter.im/twilson63/palmettoflow](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/twilson63/palmettoflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## WIP - Work in progress, please star the project on github to keep informed.
 
 [![ScreenShot](http://img.youtube.com/vi/INP1uuOYU3E/0.jpg)](http://youtu.be/INP1uuOYU3E)
