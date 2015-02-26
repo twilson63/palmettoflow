@@ -1,4 +1,7 @@
-<img src="palmetto.png" alt="palmetto" style="float: right;" height="100px" width="100px" />
+
+<div style="float: right;">
+  <img src="palmetto.png" alt="palmetto" height="100px" width="100px" />
+</div>
 
 # Palmetto Flow
 
