@@ -53,7 +53,6 @@ By separating the concerns of the application features it should continue to kee
 
 * [Application State](state.md)
 * [Write Stream](stream.md)
-* [Events](events.md)
 * [Components](components.md)
 * [Services](services.md)
 
@@ -72,6 +71,8 @@ or submit an [Issue](https://github.com/twilson63/palmettoflow/issues)
 ## Contribution
 
 see [contribution.md](contribution.md)
+
+* [Contributors](https://github.com/twilson63/palmettoflow/graphs/contributors)
 
 ## License
 
