@@ -6,17 +6,16 @@ The service is responsible for business logic and data persistence, each service
 
 ``` js
 
-myservice.register = register;
-module.exports = myservice;
+module.exports = service;
 
-function myservice(env, ee) {
+function service(ee) {
 
-  ee.on('query', function(e, write) {
+  ee.on('model-verb', function(object) {
     // handle event request
-    write([{ foo: 'bar' }]);      
+    emit('response', object);      
   });
 
-  ee.on('create', function(e, write) {
+  ee.on('widget-create', function(e, write) {
     // if authorized then create the widget
     ee.on('auth-response', function(a) {
       if (a.ok) {
@@ -28,25 +27,18 @@ function myservice(env, ee) {
       }
     });
     // ask session service if user is authorized to create a widget
-    ee.emit({
+    ee.emit('response', {
       verb: 'auth',
-      type: 'session',
+      model: 'session',
       actor: e.actor,
       object: {
-        verb: 'create',
-        type: 'widget'
+        name: '' 
       }
     });
     
   })
 }
 
-function register() {
-  return {
-    type: 'widget',
-    verbs: ['query', 'create']
-  }
-}
 
 ```
 
