@@ -55,6 +55,7 @@ By separating the concerns of the application features it should continue to kee
 * [Write Stream](stream.md)
 * [Components](components.md)
 * [Services](services.md)
+* [Adapters](adapters.md)
 
 ## Discussion
 
