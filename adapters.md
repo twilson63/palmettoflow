@@ -5,7 +5,7 @@ Palmetto Flow adapters are plugable write-logs that can be swapped out of any pa
 * [palmetto-fire](https://github.com/twilson63/palmetto-fire)
 * [palmetto-couchdb](https://github.com/twilson63/palmetto-couchdb)
 * [palmetto-rmq](https://github.com/twilson63/palmetto-rmq)
-* [palmetto-redis](https://github.com/twilson63/palmetto-redis)
+* [palmetto-redis](https://github.com/akennedy/palmetto-redis)
 * [palmetto-pubnub](https://github.com/twilson63/palmetto-pubnub)
 
 These adapters implement the same api so that they can be interchangable:  
