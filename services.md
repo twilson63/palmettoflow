@@ -71,4 +71,12 @@ and just pass to the service the object and the actor.  Then the service can lis
 The main goal is to have a service like `widgets` to be re-usable in many different applications without having to have know specific details of that application other than its piece.
 
 
+## Open Source Services
+
+* [Simple Queue Service](https://github.com/twilson63/palmettoflow-queue-svc)
+* [PouchDB/CouchDB Service](https://github.com/twilson63/palmettoflow-pouchdb-svc)
+* [MySQL Service](https://github.com/twilson63/palmettoflow-mysql-svc)
+* [Auth0 Service](https://github.com/twilson63/palmettoflow-auth0-svc)
+
+
 
