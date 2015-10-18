@@ -1,0 +1,39 @@
+{
+  "title": "palmettoFlow-event",
+  "type": "object",
+  "properties": {
+    "to": {
+      "type": "string",
+      "description": "for calls to service use /:domain/:category/:service/:action"
+    },
+    "from": {
+      "type": "string",
+      "description": "a unique identifier that can be used to return response"
+    },
+    "object": {
+      "type": "object",
+      "description": "the data that is needed to process the event"
+    },
+    "subject": {
+      "type": "string",
+      "description": "the name of the event"
+    },
+    "verb": {
+      "type": "string",
+      "description": "the action that event is trying to perform"
+    },
+    "actor": {
+      "type": "object",
+      "description": "the initiator of the event"
+    },
+    "dateSubmitted": {
+      "type": "string",
+      "description": "the date the event was initiated"
+    },
+    "duration": {
+      "type": "string",
+      "description": "the time in milliseconds the event took to process"
+    }
+  },
+  "required": ["to","from","object"]
+}
