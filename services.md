@@ -8,50 +8,65 @@ The service is responsible for business logic and data persistence, each service
 
 module.exports = service;
 
-function service(ee) {
-
-  ee.on('model-verb', function(object) {
-    // handle event request
-    emit('response', object);      
-  });
-
-  ee.on('widget-create', function(e, write) {
-    // if authorized then create the widget
-    ee.on('auth-response', function(a) {
-      if (a.ok) {
-        // insert e.object into db
-        write({
-          id: 1,
-          ok: true
-        });
-      }
+function service (config) {
+  // manage any config info
+  return function (ee) {
+    ee.on('/model/verb', function(object) {
+      // do stuff
+      // return response
+      emit('send', responseEvent);      
     });
-    // ask session service if user is authorized to create a widget
-    ee.emit('response', {
-      verb: 'auth',
-      model: 'session',
-      actor: e.actor,
-      object: {
-        name: '' 
-      }
-    });
-    
-  })
+  }
 }
-
 
 ```
 
-It is important the service container consumes messages from the write log based on the event type and verb.  Then inside the application service container it emits the events messages that match the type and verbs specified in the registered method.
+The above example is a service that takes in a configuration object and returns a function that is looking for a palmettoflow adapter, the adapter will emit palmettoflow events using the following json schema
 
-The above example is letting the app service container subscribe to the `write log` and filter all of the basic information from an event message:
+``` js
+{
+  "title": "palmettoFlow-event",
+  "type": "object",
+  "properties": {
+    "to": {
+      "type": "string",
+      "description": "for calls to service use /:domain/:category/:service/:action"
+    },
+    "from": {
+      "type": "string",
+      "description": "a unique identifier that can be used to return response"
+    },
+    "object": {
+      "type": "object",
+      "description": "the data that is needed to process the event"
+    },
+    "subject": {
+      "type": "string",
+      "description": "the name of the event"
+    },
+    "verb": {
+      "type": "string",
+      "description": "the action that event is trying to perform"
+    },
+    "actor": {
+      "type": "object",
+      "description": "the initiator of the event"
+    },
+    "dateSubmitted": {
+      "type": "string",
+      "description": "the date the event was initiated"
+    },
+    "duration": {
+      "type": "string",
+      "description": "the time in milliseconds the event took to process"
+    }
+  },
+  "required": ["to","from","object"]
+}
+```
 
-* verb
-* type
-* transaction
-* system
 
-and just pass to the service the object and the actor.  Then the service can listen based on the verb using the `on` method.  It can do its work and then push back the results using the `write` method.  The application service container would marry the response with the sent in verb, type, transaction, system.
+and just pass to the service the object and the actor.  Then the service can listen based on the verb using the `on` method.  It can do its work and then push back the results using the `ee.emit('send', {})` method.  The application service container would marry the response with the sent in verb, type, transaction, system.
 
 The main goal is to have a service like `widgets` to be re-usable in many different applications without having to have know specific details of that application other than its piece.
 
