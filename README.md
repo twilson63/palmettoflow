@@ -5,15 +5,15 @@
 
 [![Join the chat at https://gitter.im/twilson63/palmettoflow](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/twilson63/palmettoflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## WIP - Work in progress, please star the project on github to keep informed.
-
 [![ScreenShot](http://img.youtube.com/vi/INP1uuOYU3E/0.jpg)](http://youtu.be/INP1uuOYU3E)
 
-Palmetto Flow is a concept for building applications.  
+Palmetto Flow is a concept for building distributed `first` applications.  
 
-Palmetto Flow has a set of principals that enable you the developer to implement in technologies of your *choice*.
+Palmetto Flow has a set of principals that enable you the developer to implement in technologies of your *choice*.  
 
-With Palmetto Flow developers can create applications made up of components and services that can be exchanged or modified overtime with different technology and approaches. 
+> While each part of the system can be implemented in any technology, most of the current implementations are in `nodejs` and `javascript`. If you are interested in implmenting in other techologies and would like to share your implementations, please post an issue
+
+With Palmetto Flow developers can create applications made up of components and services that can be exchanged or modified overtime with different technologies and patterns and approaches. 
 
 The core concept is to separate your application using loosely coupled processes that all subscribe to a publish/subscribe system, then components can publish requests and services can subscribe to topics and process the requests.
 
@@ -62,6 +62,7 @@ By separating the concerns of the application features Palmetto Flow can continu
 * [Components](components.md)
 * [Services](services.md)
 * [Adapters](adapters.md)
+* [EventSchema](event.schema.json)
 
 ## Discussion
 
