@@ -9,7 +9,7 @@
 
 Palmetto Flow is a concept for building distributed `first` applications.  
 
-Palmetto Flow has a set of principals that enable you the developer to implement in technologies of your *choice*.  
+Palmetto Flow has a set of principles that enable you the developer to implement in technologies of your *choice*.  
 
 > While each part of the system can be implemented in any technology, most of the current implementations are in `nodejs` and `javascript`. If you are interested in implmenting in other techologies and would like to share your implementations, please post an issue
 
